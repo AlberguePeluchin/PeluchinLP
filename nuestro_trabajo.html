@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluchin-Nuestro Trabajo</title>
+    <link rel="icon" type="image/x-icon" href="img/logotipo_peluchin_pequeño.jpg"/>
+    <!--ESTILOS CSS-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--ESTILOS FONT-->
+    <link rel="stylesheet" href="css/font.css">
+    <!--ESTILOS CSS-->
+    <link rel="stylesheet" href="js/javascript.jss">
+    <!--BOOTSTRAP 5.0.0-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+    <!--ICONOS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet"/>
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!--Icono Precarga-->
+    <script>
+        $(window).on("load", function(){
+            $(".contenidos").css("opacity", 1) 
+            $("#precarga").css("display", "none");
+        });
+    </script>                         
+</head>
+<body>
+    <div id="precarga">
+        <img src="img/precarga.gif" alt="" width="200" height="200">
+    </div>
+<div class="contenidos">
+<!--INICIO NAVEGADOR-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="font-family: Roboto-Bold;" id="mainNav">
+  <div class="container-fluid"> <!--style="background-color: red;"-->
+          
+      <a href="index.html" class="col-md-4 px-5">
+          <img src="img/logotipo_peluchin_pequeño.jpg" alt="">
+      </a>
+      <!--<a class="navbar-brand" href="#page-top">Albergue Peluchin</a>-->
+
+      <button class="navbar-toggler" style="border: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="bi bi-three-dots"></span></button>
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav col-md-8 my-lg-3">
+                  <li class="nav-item"><a class="nav-link p-2" href="index.html">Inicio</a></li>
+
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="nosotros.html#historia_organizacion">Historia y Organización</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#nuestros_aliados">Nuestros Aliados</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#quieres_ayudarnos">¿Quieres ayudarnos?</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#capacitacion">Capacitación</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="nav-item dropdown"><a style="color: #e6cc68;" class="nav-link dropdown-toggle p-2" href="nuestro_trabajo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nuestro Trabajo</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html">Nuestro Trabajo</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#adopciones">Adopciones</a></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#maltrato_animal">Maltrato Animal</a></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#efermos_abandonados">Enfermos y Abandonados</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item"><a class="nav-link p-2" href="noticias.html">Noticias</a></li>
+
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="mas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="mas.html">Más</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="mas.html#donaciones">Donaciones</a></li>
+                        <li><a class="dropdown-item" href="mas.html#contactos">Contactos</a></li>
+                    </ul>
+                  </li>
+              
+              </ul>
+          
+                <div class="col-md-4 col-lg-4">
+                  <button type="button" class="btn btn-outline-warning me-2"><a href="mas.html#contactos" style="text-decoration: none; color:rgb(255, 208, 0)">Contactanos</a> </button>
+                  <button type="button" class="btn btn-warning"><a href="administrador/login.php" style="text-decoration: none; color:black">Iniciar Sesion</a></button>
+                </div>
+          </div>
+  </div>
+  </div>
+</nav>
+<!--FIN NAVEGADOR-->
+<!--INICIO REDES SOCIALES FLOTANTES-->  
+    <div class="social-bar">
+        <a href="https://www.facebook.com/albergueparamascotas" target="_blank" class="icon bi-facebook"></a>
+        <a href="https://wa.me/59179171062?text=Hola%20Albergue%20%22Peluchin%22,%20" class="icon bi-whatsapp" target="_blank"></a>
+        <a href="https://www.instagram.com/albergue_peluchin/?fbclid=IwAR1YLjL50DOyPYFY-9IM7298-Ir-n-YXoZpAe5KfyEICdWzrpzZzZFiOgng" target="_blank" class="icon bi-instagram"></a>
+        <a href="https://www.tiktok.com/@albergue_peluchin?is_from_webapp=1&sender_device=pc" target="_blank" class="icon bi-tiktok"></a>
+        <a href="#" target="_blank" class="icon bi-youtube"></a>
+    </div>
+<!--FIN REDES SOCIALES FLOTANTES-->
+<!--INICIO CARATULA NUESTRO TRABAJO-->
+<section class="masthead" style="background-image: url('img/portada_trabajo.jpg')">
+  <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+              <div class="site-heading">
+                  <h1 style="font-family: Roboto-Bold;">NUESTRO TRABAJO</h1>
+                  <span class="subheading" style="font-family: Roboto-Light;">"Conoce sobre lo que hacemos"</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--FIN CARATULA NUESTRO TRABAJO-->
+
+<!-- Related items section-->
+<section class="py-5 bg-warning">
+  <div class="container px-4 px-lg-5 mt-5">
+      <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-3 justify-content-center">
+          <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <img class="card-img-top" src="img/Prueba2.jpg" alt="..." />
+                  <!-- Product details-->
+                  <div class="card-body p-4 pb-0">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder" style="font-family: Roboto-Bold;">Adopciones</h5>
+                          <!-- Product price-->
+                          <p class="mb-0">Nuestro albergue de mascotas cuenta con el programa de adopciones ubicado en la ciudad de La Paz.</p>
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-4 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#adopciones-galeria">Saber más</a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Sale badge-->
+                  <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Importante</div>
+                  <!-- Product image-->
+                  <img class="card-img-top" src="img/Prueba11.jpg" alt="..." />
+                  <!-- Product details-->
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder" style="font-family: Roboto-Bold;">Enfermos y Abandonados</h5>
+                          <!-- Product price-->
+                          <p class="mb-0">La mayoría de animales son abandonados por sus propietarios por alguna enfermedad.</p>
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#enfermos-abandonados-galeria">Saber más</a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Sale badge-->
+                  <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Importante</div>
+                  <!-- Product image-->
+                  <img class="card-img-top" src="img/Prueba3.jpg" alt="..." />
+                  <!-- Product details-->
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Maltrato Animal</h5>
+                          <!-- Product price-->
+                          <p class="mb-0">Se atiende las denuncias sobre cualquier tipo de crueldad y todo tipo de maltrato animal.</p>
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#maltrato_animal">Saber más</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--INICIO ADOPCIONES-->
+<main style="background-image: url(img/fondo.png);" class="pb-5">
+<section id="adopciones" class="services pt-0">
+  <div class="container" data-aos="fade-up">
+    <div class="titulo">
+      <span>ADOPCIONES</span>
+      <h2>Adopciones</h2>
+    </div>
+    <div class="row">
+      <div class="row col-12 justify-content-center align-items-center">
+        <p style="font-size: 18px">"Nuestra meta en la vida es ser tan buena persona, como mi perro cree que soy. “Adopta un perro, es la única forma de escoger un familiar y la mejor de conseguir un amigo fiel…."
+        <br>
+        Un perro es compañía, dedicación completa y amor sin condiciones, justo lo que siempre hemos deseado de los demás y nunca hemos brindado.</p>
+        <div class="info-horario col-6 bg-warning p-4"><h5>El horario de adopciones en el albergue es: <br> Lunes a viernes 09:00 a 13:00 - 14:00 a 18:00 <br> Fin de semanas de 10:00 a 15:00 horas.
+        </h5></div>
+        <h4>Requisitos:</h4>
+        <!--Inicio requisitos-->
+        <div class="row mt-3">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
+            <div>
+              <h5 class="title">Fotocopia carnet</a></h4>
+              <p class="description">Fotocopia de C.I., ademas que la persona tiene que ser mayor a 18 años.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
+            <div>
+              <h5 class="title">Número de telefono</a></h4>
+              <p class="description">Mucho mejor si el número dispone de con acceso a Whatsapp.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
+            <div>
+              <h5 class="title">Fotocopia agua o luz</a></h4>
+              <p class="description">Una fotocopia de la última factura de agua o luz, que contenga los datos del hogar.</p>
+            </div>
+        </div>
+      <!--Fin requisitos-->
+
+
+        <!--Inicio Galeria adopciones-->
+        
+        <section class="content-section mt-4" id="adopciones-galeria">
+          <div class="container px-4 px-lg-5">
+              <div class="content-section-heading text-center">
+                  <h3 class="text-secondary mb-0">Adopciones</h3>
+                  <h2 class="mb-5" style="font-family: Roboto-Light;">Algunos de nuestros animales <small style="font-family: Roboto-Bold; color: #e6cc68;"> en adopción</small></h2>
+              </div>
+            
+          </div>
+            <section class="testimonioscard">
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/adopcion1.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Baloo</small></h5>
+                        <h4 style="text-align: left;">Datos:</h4>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Baloo </small>es un hermoso perro de raza mestiza, tiene 2 años, es macho, es amable, cariñoso, jugueton y muy educado. <small style="font-family: Roboto-Black; font-size: 20px;" >¡Conocelo!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero adoptar</a>
+                    </div>
+                </div>
+
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/adopcion2.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Canelo</small></h5>
+                        <h4 style="text-align: left;">Datos:</h4>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Canelo </small>es un perro de raza mestiza, con pelo corto, tiene 1 año, es macho, es muy cariñoso, le encanta jugar pero se cansa rapido asi que tambien le gusta dormir. <small style="font-family: Roboto-Black; font-size: 20px;" >¡Conocelo!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero adoptar</a>
+                    </div>
+                </div>
+
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/adopcion3.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Cachorros</small></h5>
+                        <h4 style="text-align: left;">Datos:</h4>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Tenemos cachorros </small>apenas tienen 2 meses de nacidos, son de pelo corto, muy juguetones, cuentan con todas sus vacunas. <small style="font-family: Roboto-Black; font-size: 20px;" >¡Conocelos!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero adoptar</a>
+                    </div>
+                </div>
+
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/adopcion4.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Lucy, Lua y Coco</small></h5>
+                        <h4 style="text-align: left;">Datos:</h4>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Nuestras mascotas </small>Lucy, Lua y Coco estan a la espera de un hogar, todos muy tiernos, muy cariñosos y bien educados. <small style="font-family: Roboto-Black; font-size: 20px;" >¡Conocelo!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero adoptar</a>
+                    </div>
+                </div>
+
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/adopcion5.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Mishi y Princesa</small></h5>
+                        <h4 style="text-align: left;">Datos:</h4>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Dos gatitas hermosas </small>recien con 1 mes, ambas con manchas y pelo normal, muy limpias y juguetonas, estan a la espera de un hogar que las acoja. <small style="font-family: Roboto-Black; font-size: 20px;" >¡Conocelas!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero adoptar</a>
+                    </div>
+                </div>
+
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/adopcion6.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Pluto, Manchas y Rocky</small></h5>
+                        <h4 style="text-align: left;">Datos:</h4>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Algunas mascotas </small>son timidos, pero muy educados, tienen 4 años, muy cariñosos y tranquilos, estan a la espera de un hogar. <small style="font-family: Roboto-Black; font-size: 20px;" >¡Conocelos!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero adoptar</a>
+                    </div>
+                </div>
+
+    
+            </section>
+      </section>
+        </main>
+        
+      <!--Fin Galeria adopciones-->
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-6 bg-danger">
+
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 bg-success">
+  
+      </div>
+    </div>
+    
+  </div>
+</section>
+<!--FIN ADOPCIONES-->
+<!--FIN MALTRATO ANIMAL-->
+<section id="maltrato_animal" class="services pt-0">
+  <div class="container" data-aos="fade-up">
+    <div class="titulo">
+      <span>MALTRATO ANIMAL</span>
+      <h2>Maltrato Animal</h2>
+
+    </div>
+  </div>
+</section>
+<div class="row">
+  <div class="row imagen-maltrato-animal justify-content-center align-items-center">
+    <div class="col-8 text-white">
+      <h5>Aunque somos un albergue para mascotas, también recibimos denuncias sobre el maltrato animal y lo recibimos a pesar de que no sea nuestra labor, ya que nuestro labor es el bienestar y el cuidado de nuestros amiguitos de 4 patas.</h5>
+    </div>
+    <div class="col-8 text-center text-white">
+      <h3>"El mejor amigo del perro es otro perro por eso todas las mascotas excepto el hombre, saben que el asunto principal de la vida es disfrutarla"</h3>
+    </div>
+  </div>
+  
+</div>
+<!--FIN MALTRATO ANIMAL-->
+<!--INICIO ENFERMOS Y ABANDONADOS-->
+<main style="background-image: url(img/fondo4.jpg);" class="pb-5">
+<section id="enfermos_abandonados" class="services pt-0">
+  <div class="container" data-aos="fade-up">
+    <div class="titulo">
+      <span>ENFERMOS Y ABANDONADOS</span>
+      <h2>Enfermos y Abandonados</h2>
+    </div>
+    <div class="row">
+      <div class="row col-12 justify-content-center align-items-center">
+        <p style="font-size: 18px">En la ciudad muchas mascotitas ya sean perros o gatos son abandonados por sus dueños ya sea por que están enfermos y  ya no los quieren o en ocasiones por que se pierden, por estas situaciones son el motivo por el cual nacemos como albergue para mascotas "Peluchin" para evitar que sigan habiendo estos casos de abandonos por cualquier motivo...</p>
+        <!--Inicio Galeria adopciones-->
+        <section class="content-section" id="enfermos-abandonados-galeria">
+          <div class="container px-4 px-lg-5">
+              <div class="content-section-heading text-center">
+                  <h3 class="text-secondary mb-0">Enfermos y Abandonados</h3>
+                  <h2 class="mb-5" style="font-family: Roboto-Light;">Necesitamos de tu ayuda ellos merecen una <small style="font-family: Roboto-Bold; color: #e6cc68;"> segunda oportunidad</small></h2>
+              </div>
+              
+          </div>
+          <section class="testimonioscard">
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/enfermos1.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Mascota</small></h5>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Ellos </small>eson seres que necesitan tu ayuda, merecen otra oportunidad, son seres muy hermosos y fieles.<small style="font-family: Roboto-Black; font-size: 20px;" >Ayudalos!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero ayudar</a>
+                    </div>
+                </div>
+
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/enfermos2.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Mascota</small></h5>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Ellos </small>eson seres que necesitan tu ayuda, merecen otra oportunidad, son seres muy hermosos y fieles.<small style="font-family: Roboto-Black; font-size: 20px;" >Ayudalos!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero ayudar</a>
+                    </div>
+                </div>
+
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/enfermos3.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Mascota</small></h5>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Ellos </small>eson seres que necesitan tu ayuda, merecen otra oportunidad, son seres muy hermosos y fieles.<small style="font-family: Roboto-Black; font-size: 20px;" >Ayudalos!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero ayudar</a>
+                    </div>
+                </div>
+
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/enfermos4.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Mascota</small></h5>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Ellos </small>eson seres que necesitan tu ayuda, merecen otra oportunidad, son seres muy hermosos y fieles.<small style="font-family: Roboto-Black; font-size: 20px;" >Ayudalos!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero ayudar</a>
+                    </div>
+                </div>
+
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/enfermos5.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Mascota</small></h5>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Ellos </small>eson seres que necesitan tu ayuda, merecen otra oportunidad, son seres muy hermosos y fieles.<small style="font-family: Roboto-Black; font-size: 20px;" >Ayudalos!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero ayudar</a>
+                    </div>
+                </div>
+
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/enfermos6.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Mascota</small></h5>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Ellos </small>eson seres que necesitan tu ayuda, merecen otra oportunidad, son seres muy hermosos y fieles.<small style="font-family: Roboto-Black; font-size: 20px;" >Ayudalos!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero ayudar</a>
+                    </div>
+                </div>
+
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/enfermos7.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Mascota</small></h5>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Ellos </small>eson seres que necesitan tu ayuda, merecen otra oportunidad, son seres muy hermosos y fieles.<small style="font-family: Roboto-Black; font-size: 20px;" >Ayudalos!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero ayudar</a>
+                    </div>
+                </div>
+
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/enfermos8.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Mascota</small></h5>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Ellos </small>eson seres que necesitan tu ayuda, merecen otra oportunidad, son seres muy hermosos y fieles.<small style="font-family: Roboto-Black; font-size: 20px;" >Ayudalos!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero ayudar</a>
+                    </div>
+                </div>
+
+                <div class="card-testimonios">
+                    <div class="face front">
+                        <img src="img/enfermos9.png" alt="">
+                    </div>
+                    <div class="face back">
+                        <h5 style="font-family: Roboto-Bold;">Nombre: <small style="font-family: Roboto-Thin;">Mascota</small></h5>
+                        <p class="texto-justificado" style="font-family: Roboto-Thin;"><small style="font-family: Roboto-Black; font-size: 20px;" >Ellos </small>eson seres que necesitan tu ayuda, merecen otra oportunidad, son seres muy hermosos y fieles.<small style="font-family: Roboto-Black; font-size: 20px;" >Ayudalos!</small></p>
+                        <a class="btn btn-warning" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20adoptar%20a:%20">Quiero ayudar</a>
+                    </div>
+                </div>
+                
+    
+            </section>
+      </section>
+      <!--Fin Galeria adopciones-->
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-6 bg-danger">
+
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 bg-success">
+  
+      </div>
+    </div>
+    
+  </div>
+</section>
+</main>
+<!--FIN ENFERMOS Y ABANDONADOS-->
+<!--INICIO FOOTER--> 
+<div class="b-example-divider"></div>
+ 
+<div class="footer bg-black" id="contactos" style="background-image: url(img/fondo5.jpg);">
+  <div class="row">
+    <footer class="footer text-center">
+      <div class="row m-3">
+        <div class="col-md-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30599.941605274613!2d-68.12072283964234!3d-16.526466147455412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9e60dac45aa6851!2sAlbergue%20de%20Mascotas%20%22Peluch%C3%ADn%22!5e0!3m2!1ses!2sbo!4v1665429882664!5m2!1ses!2sbo" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-sm-6 col-md-4 text-center p-4 ">
+            <h5 style="color: #fff;"> Emergencias | Maltrato Animal | Adopciones</h5>
+            <hr class="divider">
+            <h5 class="" style="color: #fff; text-decoration: none;" href="peluchinpatitasdeamoralbergue@gmail.com">Correo: peluchinpatitasdeamoralbergue@gmail.com</h5>
+            <hr class="divider">
+            <h5 style="color: #fff;">Teléfonos: <a href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22," style="text-decoration: none; color: #fff;" target="_blank">79171062</a>  - <a href="https://api.whatsapp.com/send?phone=61162965&text=Hola%20Albergue%20%22Peluchin%22,%20" style="text-decoration: none; color: #fff;" target="_blank">61162965</a> - <a href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22," style="text-decoration: none; color: #fff;" target="_blank">78974022</a></h5>
+           
+        </div>
+        <div class="col-md-4 text-center pt-5 p-5">
+          <h5 style="color: #fff;">Dirección</h5>
+          <h5 style="color: #fff;">C. 12 los Nogales #488, La Paz </h5>
+        </div>
+      </div>
+      <div class="container px-4 px-lg-5">
+          <ul class="list-inline mb-2 pt-1">
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/albergueparamascotas" target="_blank"><i class="icon bi-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="https://wa.me/59179171062?text=Hola%20Albergue%20%22Peluchin%22,%20" target="_blank"><i class="icon bi-whatsapp"></i></a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white" href="https://www.tiktok.com/@albergue_peluchin?is_from_webapp=1&sender_device=pc" target="_blank"><i class="icon bi-tiktok"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="https://www.instagram.com/albergue_peluchin/?fbclid=IwAR1YLjL50DOyPYFY-9IM7298-Ir-n-YXoZpAe5KfyEICdWzrpzZzZFiOgng" target="_blank"><i class="icon bi-instagram"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white" href="#!" target="_blank"><i class="icon bi-youtube"></i></a>
+            </li>
+          </ul>
+          <p class="small mt-3 mb-4" style="color: #fff;">Derechos Reservados &copy;, Albergue para mascotas "Peluchin", © 2022</p>
+      </div>
+  </div>
+</div>
+<!--FIN FOOTER-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', event => {
+  
+  // Navbar
+  var navbarShrink = function () {
+      const navbarCollapsible = document.body.querySelector('#mainNav');
+      if (!navbarCollapsible) {
+          return;
+      }
+      if (window.scrollY === 0) {
+          navbarCollapsible.classList.remove('navbar-shrink')
+      } else {
+          navbarCollapsible.classList.add('navbar-shrink')
+      }
+  
+  };
+  
+  // Shrink the navbar 
+  navbarShrink();
+  
+  // Shrink the navbar when page is scrolled
+  document.addEventListener('scroll', navbarShrink);
+  
+  // Activate Bootstrap scrollspy on the main nav element
+  const mainNav = document.body.querySelector('#mainNav');
+  if (mainNav) {
+      new bootstrap.ScrollSpy(document.body, {
+          target: '#mainNav',
+          offset: 74,
+      });
+  };
+  
+  // Collapse responsive navbar when toggler is visible
+  const navbarToggler = document.body.querySelector('.navbar-toggler');
+  const responsiveNavItems = [].slice.call(
+      document.querySelectorAll('#navbarResponsive .nav-link')
+  );
+  responsiveNavItems.map(function (responsiveNavItem) {
+      responsiveNavItem.addEventListener('click', () => {
+          if (window.getComputedStyle(navbarToggler).display !== 'none') {
+              navbarToggler.click();
+          }
+      });
+  });
+  
+  // Activate SimpleLightbox plugin for portfolio items
+  new SimpleLightbox({
+      elements: '#portfolio a.portfolio-box'
+  });
+  
+  });
+  
+    </script>
+</div>
+</body>
+</html>

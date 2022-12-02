@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peluchin-Noticias</title>
+  <link rel="icon" type="image/x-icon" href="img/logotipo_peluchin_pequeño.jpg"/>
+  <!--ESTILOS CSS-->
+  <link rel="stylesheet" href="css/estilos.css">
+  <!--ESTILOS FONT-->
+  <link rel="stylesheet" href="css/font.css">
+  <!--ESTILOS CSS-->
+  <link rel="stylesheet" href="js/javascript.jss">
+  <!--BOOTSTRAP 5.0.0-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+  <!--ICONOS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Simple line icons-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <!--Jquery CDN-->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <!--Icono Precarga-->
+  <script>
+    $(window).on("load", function(){
+        $(".contenidos").css("opacity", 1) 
+        $("#precarga").css("display", "none");
+    });
+  </script>
+</head>
+<body>
+    <div id="precarga">
+        <img src="img/precarga.gif" alt="" width="200" height="200">
+    </div>
+<div class="contenidos">
+<!--INICIO NAVEGADOR-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="font-family: Roboto-Bold;" id="mainNav">
+  <div class="container-fluid"> <!--style="background-color: red;"-->
+          
+      <a href="index.html" class="col-md-4 px-5">
+          <img src="img/logotipo_peluchin_pequeño.jpg" alt="">
+      </a>
+      <!--<a class="navbar-brand" href="#page-top">Albergue Peluchin</a>-->
+
+      <button class="navbar-toggler" style="border: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="bi bi-three-dots"></span></button>
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav col-md-8 my-lg-3">
+                  <li class="nav-item"><a class="nav-link p-2" href="index.html">Inicio</a></li>
+
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="nosotros.html#historia_organizacion">Historia y Organización</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#nuestros_aliados">Nuestros Aliados</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#quieres_ayudarnos">¿Quieres ayudarnos?</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#capacitacion">Capacitación</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="nuestro_trabajo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nuestro Trabajo</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html">Nuestro Trabajo</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#adopciones">Adopciones</a></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#maltrato_animal">Maltrato Animal</a></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#efermos_abandonados">Enfermos y Abandonados</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item"><a style="color: #e6cc68;" class="nav-link p-2" href="noticias.html">Noticias</a></li>
+
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="mas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="mas.html">Más</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="mas.html#donaciones">Donaciones</a></li>
+                        <li><a class="dropdown-item" href="mas.html#contactos">Contactos</a></li>
+                    </ul>
+                  </li>
+              
+              </ul>
+          
+                <div class="col-md-4 col-lg-4">
+                  <button type="button" class="btn btn-outline-warning me-2"><a href="mas.html#contactos" style="text-decoration: none; color:rgb(255, 208, 0)">Contactanos</a> </button>
+                  <button type="button" class="btn btn-warning"><a href="administrador/login.php" style="text-decoration: none; color:black">Iniciar Sesion</a></button>
+                </div>
+          </div>
+  </div>
+  </div>
+</nav>
+<!--FIN NAVEGADOR-->
+<!--INICIO REDES SOCIALES FLOTANTES-->  
+<div class="social-bar">
+  <a href="https://www.facebook.com/albergueparamascotas" target="_blank" class="icon bi-facebook"></a>
+  <a href="https://wa.me/59179171062?text=Hola%20Albergue%20%22Peluchin%22,%20" class="icon bi-whatsapp" target="_blank"></a>
+  <a href="https://www.instagram.com/albergue_peluchin/?fbclid=IwAR1YLjL50DOyPYFY-9IM7298-Ir-n-YXoZpAe5KfyEICdWzrpzZzZFiOgng" target="_blank" class="icon bi-instagram"></a>
+  <a href="https://www.tiktok.com/@albergue_peluchin?is_from_webapp=1&sender_device=pc" target="_blank" class="icon bi-tiktok"></a>
+  <a href="#" target="_blank" class="icon bi-youtube"></a>
+</div>
+<!--FIN REDES SOCIALES FLOTANTES-->
+<!--INICIO CARATULA NUESTRO TRABAJO-->
+<section class="masthead" style="background-image: url('img/portada_noticias.jpg')">
+  <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+              <div class="site-heading">
+                  <h1>NOTICIAS</h1>
+                  <span class="subheading">"Enterate de lo utlimo"</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--FIN CARATULA NUESTRO TRABAJO-->
+<!--INICIO NOTICIAS-->
+<section class="py-5">
+  <div class="container px-4 px-lg-5 my-5">
+      <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="img/noticia1.png" alt="..." /></div>
+          <div class="col-md-6">
+              <div class="small mb-1">Noviembre 30, 2022</div>
+              <h1 class="display-5 fw-bolder">Entrevista al Albergue por Red Uno</h1>
+              <div class="fs-5 mb-5">
+                  <span>Se hablo sobre la feria de adopción que viene el 4 de diciembre</span>
+              </div>
+              <p class="lead">El dia de hoy se realizo la entrevista al albergue peluchin por parte de la red uno, el mañanero junto con unifranz, se vio todo referente a la campaña de adopcion que se realizara el 4 de diciembre, mostrando a las mascotitas, informado sobre el lugar, la hora, y ver como trabaja el albergue sobre las mascotitas</p>
+              <div class="d-flex">
+                <button class="btn btn-outline-success flex-shrink-0" type="button" data-bs-toggle="modal" data-bs-target="#noticia1">
+                  <i class="bi-house-heart-fill"></i>
+                   Saber más
+                </button>
+              </div>
+              <!-- Modal Visita Unifranz-->
+              <div class="modal fade" id="noticia1" tabindex="-1" aria-labelledby="noticia1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title" id="exampleModalLabel">Entrevista al Albergue por Red Uno</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row justify-content-center">
+                      <div class="" style="width: 50%;">
+                        <img src="img/contenidonoticia1.png" alt="" width="100%">
+                      </div>
+                      <div class="" style="width: 50%;">
+                        <img src="img/contenidonoticia2.png" alt="" width="100%">
+                      </div>
+                      <p class="texto-justificado p-3">El domingo 4 de diciembre, se llevara a cabo la feria de adopción "ADOPTA UN AMIGO", en la Plaza San Francisco a horas 10:00 am</p>
+                      <div class="" style="width: 50%;">
+                        <img src="img/contenidonoticia3.jpg" alt="" width="100%">
+                      </div>
+                      <div class="" style="width: 50%;">
+                        <iframe src="https://drive.google.com/file/d/12ZFp1lh9_2DiObgYndejztL3JFF0Oywl/preview" width="100%" height="100%" allow="autoplay"></iframe>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Visitar Facebook</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="py-5">
+  <div class="container px-4 px-lg-5 my-5">
+      <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="img/visita-unifranz.png" alt="..." /></div>
+          <div class="col-md-6">
+              <div class="small mb-1">Octubre 1, 2022</div>
+              <h1 class="display-5 fw-bolder">Visita al Albergue</h1>
+              <div class="fs-5 mb-5">
+                  <span>Alumnos de 7mo semestre de Ingenieria Comercial "UNIFRANZ"</span>
+              </div>
+              <p class="lead">Es bueno tener un fin hacia el cual ayudar, pero es el lugar el que importa finalmente un sábado con Unifranz.
+              <br>
+              El día sábado 1 de octubre del mes pasado los alumnos de séptimo semestre de Ingeniería Comercial de la Universidad privada “UNIFRANZ”, visitaron nuestro albergue para mascotas “Peluchin”.</p>
+              <div class="d-flex">
+                <button class="btn btn-outline-success flex-shrink-0" type="button" data-bs-toggle="modal" data-bs-target="#visita-unifranz">
+                  <i class="bi-house-heart-fill"></i>
+                   Saber más
+                </button>
+              </div>
+              <!-- Modal Visita Unifranz-->
+              <div class="modal fade" id="visita-unifranz" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title" id="exampleModalLabel">Visita Unifranz</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row justify-content-center">
+                      <div class="" style="width: 70%;">
+                        <img src="img/visita-unifranz1.png" alt="" width="100%">
+                      </div>
+                      <p class="texto-justificado p-3">Nosotros como estudiantes tuvimos la iniciativa y se programó está visita con la ayuda.
+                        <br>
+                        Quedamos gratamente sorprendidos con la solidaridad y la empatía de estos estudiantes por sus colaboraciones, ya que nos ayudaron a cocinar la comida, limpiar las camas, las casas de las mascotas, al igual que limpiar el lugar de arriba abajo, también nos colaboraron con comidas para las mascotas, valdes entre otras cosas.</p>
+                      <div class="" style="width: 50%;">
+                        <img src="img/visita-unifranz2.png" alt="" width="100%">
+                      </div>
+                      <p class="texto-justificado p-3">Además, las estudiantes: Alarcón Ticona Diego, Apaza Mixto Ivan, Camacho Cabrera Jhandel Mayrenn. Chipana Lopez Pamela Jhoana, Choque Aruquipa Pamela, Choque Mamani María, Choque Murga Jose Reynaldo, Condori Cama Ruben Octavio, Condori Copa Cristian Luis, Huarca Ichuta Alan Rene, Jimenez Condori Joel Jose, Mamani Canqui Julio César, Marcani Choque Maria Lina, Nina Alejo Nancy Mónica, Perez Very Jhojan Marcelo, Plata Ninachoque Dionicio Willy, Plata Zabala Carlos Alfredo, Quisbert Claure Madelen, Ricaldy Cabaya Erika, Rodriguez Mallea Kael Fernando, Rojas Vasquez Jhenny Nelida, Tancara Alejo Luz Marisel, Vargas Mamani Wendy Karina, Velasco Arratia Juan Rodrigo, Yahuasi Garnica Luz Arminda, Zapata Anaya Josefina Katerine                        
+                        <br><br>
+                      Donaron en total 500bs para la comida, croquetas, recursos necesarios para nuestro albergue.
+                        <ul class="px-5">
+                          <li>Croquetas</li>
+                          <li>Alimentos como ser, patitas de pollo, menudencias, etc.</li>
+                          <li>Trapos, valdes.</li>
+                        </ul>
+                      </p>
+                      <div class="" style="width: 50%;">
+                        <img src="img/visita-unifranz3.png" alt="" width="100%">
+                      </div>
+                      <div class="" style="width: 50%;">
+                        <img src="img/visita-unifranz4.png" alt="" width="100%">
+                      </div>
+                      <p class="texto-justificado p-3">Cuando no podíamos esperar más los estudiantes además de las donaciones y la colaboración con la limpieza en general, nos comunicaron una campaña de adopción y donación de fondos el dia 4 de diciembre.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Visitar Facebook</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container px-4 px-lg-5 my-5">
+      <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="img/limpieza.jpg" alt="..." /></div>
+          <div class="col-md-6">
+              <div class="small mb-1">Septiembre 21, 2022</div>
+              <h1 class="display-5 fw-bolder">Limpieza profunda al Albergue</h1>
+              <div class="fs-5 mb-5">
+                  <span>Unidad Educativa "Don Bosco"</span>
+              </div>
+              <p class="lead">Queremos agradecer a la U.E. DON BOSCO Pampahasi  y a los alumnos de la PRE PROMOCIÓN 2022 quienes vinieron los días lunes y martes de 8:30 a 18:00 a realizar limpieza profunda al albergue, refaccionar casitas, habilitar nuevas áreas, lavar frazadas, platitos, ollas, ropitas y pintaron todas las áreas del albergue.
+              <br>
+              Mil gracias a los jóvenes, a los profesores ,padres de familias y todos los que hicieron posible está hermosa actividad, también nos entregaron 80 kilos de croquetas.</p>
+              <div class="d-flex">
+                <button class="btn btn-outline-success flex-shrink-0" type="button">
+                  <i class="bi-house-heart-fill"></i>
+                   Saber más
+                </button>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container px-4 px-lg-5 my-5">
+      <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="img/noticia2.jpg" alt="..." /></div>
+          <div class="col-md-6">
+              <div class="small mb-1">Septiembre, 2022</div>
+              <h1 class="display-5 fw-bolder">Septiembre mes del amor y la amistad</h1>
+              <div class="fs-5 mb-5">
+                  <span>Venta de Cupcakes</span>
+              </div>
+              <p class="lead">Este mes del amor amor y la amistad ,estaremos vendiendo cupcakes para tu amigo Perruno y gatuno
+                A solo 25bs. Las cajas que tiene 2 cupcakes de chocolate o vainilla para ti y 2 cupcakes con ingredientes especiales para ellos..</p>
+              <div class="d-flex">
+                <button class="btn btn-outline-success flex-shrink-0" type="button">
+                  <i class="bi-house-heart-fill"></i>
+                   Saber más
+                </button>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="py-5">
+  <div class="container px-4 px-lg-5 my-5">
+      <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="img/noticia3.jpg" alt="..." /></div>
+          <div class="col-md-6">
+              <div class="small mb-1">Septiembre 25, 2022</div>
+              <h1 class="display-5 fw-bolder">Feria de adopciones "Patita Fest"</h1>
+              <div class="fs-5 mb-5">
+                  <span>Adopciones</span>
+              </div>
+              <p class="lead">Este Domingo los esperamos en Ciudad Satélite Plaza del Tinku.
+                <br>
+                Llevaremos muchísimos gatitos y perritos listos para ser adoptados, anímate a darles una oportunidad </p>
+              <div class="d-flex">
+                <button class="btn btn-outline-success flex-shrink-0" type="button">
+                  <i class="bi-house-heart-fill"></i>
+                   Saber más
+                </button>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--FIN NOTICIAS-->
+
+<div class="titulo mt-5">
+  <span>otras noticias</span>
+  <h2>OTRAS NOTICIAS</h2>
+</div>
+<div class="container">
+  <div class="row mb-5">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <iframe width="100%" height="300" src="https://www.youtube.com/embed/sxgMSkKKIUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <iframe width="100%" height="300" src="https://www.youtube.com/embed/u1mFu-UrPjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <iframe width="100%" height="300" src="https://www.youtube.com/embed/VQAp5LiptjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <iframe width="100%" height="300" src="https://www.youtube.com/embed/vjN1LrH6HEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+  </div>
+</div>
+
+<!--INICIO FOOTER--> 
+<div class="b-example-divider"></div>
+ 
+<div class="footer bg-black" id="contactos" style="background-image: url(img/fondo5.jpg);">
+  <div class="row">
+    <footer class="footer text-center">
+      <div class="row m-3">
+        <div class="col-md-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30599.941605274613!2d-68.12072283964234!3d-16.526466147455412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9e60dac45aa6851!2sAlbergue%20de%20Mascotas%20%22Peluch%C3%ADn%22!5e0!3m2!1ses!2sbo!4v1665429882664!5m2!1ses!2sbo" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-sm-6 col-md-4 text-center p-4 ">
+            <h5 style="color: #fff;"> Emergencias | Maltrato Animal | Adopciones</h5>
+            <hr class="divider">
+            <h5 class="" style="color: #fff; text-decoration: none;" href="peluchinpatitasdeamoralbergue@gmail.com">Correo: peluchinpatitasdeamoralbergue@gmail.com</h5>
+            <hr class="divider">
+            <h5 style="color: #fff;">Teléfonos: <a href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22," style="text-decoration: none; color: #fff;" target="_blank">79171062</a>  - <a href="https://api.whatsapp.com/send?phone=61162965&text=Hola%20Albergue%20%22Peluchin%22,%20" style="text-decoration: none; color: #fff;" target="_blank">61162965</a> - <a href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22," style="text-decoration: none; color: #fff;" target="_blank">78974022</a></h5>
+           
+        </div>
+        <div class="col-md-4 text-center pt-5 p-5">
+          <h5 style="color: #fff;">Dirección</h5>
+          <h5 style="color: #fff;">C. 12 los Nogales #488, La Paz </h5>
+        </div>
+      </div>
+      <div class="container px-4 px-lg-5">
+          <ul class="list-inline mb-2 pt-1">
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/albergueparamascotas" target="_blank"><i class="icon bi-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="https://wa.me/59179171062?text=Hola%20Albergue%20%22Peluchin%22,%20" target="_blank"><i class="icon bi-whatsapp"></i></a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white" href="https://www.tiktok.com/@albergue_peluchin?is_from_webapp=1&sender_device=pc" target="_blank"><i class="icon bi-tiktok"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="https://www.instagram.com/albergue_peluchin/?fbclid=IwAR1YLjL50DOyPYFY-9IM7298-Ir-n-YXoZpAe5KfyEICdWzrpzZzZFiOgng" target="_blank"><i class="icon bi-instagram"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white" href="#!" target="_blank"><i class="icon bi-youtube"></i></a>
+            </li>
+          </ul>
+          <p class="small mt-3 mb-4" style="color: #fff;">Derechos Reservados &copy;, Albergue para mascotas "Peluchin", © 2022</p>
+      </div>
+  </div>
+</div>
+<!--FIN FOOTER-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', event => {
+  
+  // Navbar
+  var navbarShrink = function () {
+      const navbarCollapsible = document.body.querySelector('#mainNav');
+      if (!navbarCollapsible) {
+          return;
+      }
+      if (window.scrollY === 0) {
+          navbarCollapsible.classList.remove('navbar-shrink')
+      } else {
+          navbarCollapsible.classList.add('navbar-shrink')
+      }
+  
+  };
+  
+  // Shrink the navbar 
+  navbarShrink();
+  
+  // Shrink the navbar when page is scrolled
+  document.addEventListener('scroll', navbarShrink);
+  
+  // Activate Bootstrap scrollspy on the main nav element
+  const mainNav = document.body.querySelector('#mainNav');
+  if (mainNav) {
+      new bootstrap.ScrollSpy(document.body, {
+          target: '#mainNav',
+          offset: 74,
+      });
+  };
+  
+  // Collapse responsive navbar when toggler is visible
+  const navbarToggler = document.body.querySelector('.navbar-toggler');
+  const responsiveNavItems = [].slice.call(
+      document.querySelectorAll('#navbarResponsive .nav-link')
+  );
+  responsiveNavItems.map(function (responsiveNavItem) {
+      responsiveNavItem.addEventListener('click', () => {
+          if (window.getComputedStyle(navbarToggler).display !== 'none') {
+              navbarToggler.click();
+          }
+      });
+  });
+  
+  // Activate SimpleLightbox plugin for portfolio items
+  new SimpleLightbox({
+      elements: '#portfolio a.portfolio-box'
+  });
+  
+  });
+  
+    </script>
+</div>
+</body>
+</html>

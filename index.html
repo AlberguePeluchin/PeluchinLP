@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALBERGUE PELUCHIN</title>
+  <link rel="icon" type="image/x-icon" href="img/logotipo_peluchin_pequeño.jpg"/>
+  <!--ESTILOS CSS--> 
+  <link rel="stylesheet" href="css/estilos.css"> 
+  <!--ESTILOS CSS-->
+  <link rel="stylesheet" href="js/javascript.jss">
+  <!--ESTILOS FONT-->
+  <link rel="stylesheet" href="css/font.css">
+  <!--BOOTSTRAP 5.0.0-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+  <!--ICONOS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Simple line icons-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <!--Jquery CDN-->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <!--Icono Precarga-->
+  <script>
+    $(window).on("load", function(){
+        $(".contenidos").css("opacity", 1) 
+        $("#precarga").css("display", "none");
+    });
+  </script>
+</head>
+<body>
+    <div id="precarga">
+        <img src="img/precarga.gif" alt="" width="200" height="200">
+    </div>
+<div class="contenidos">
+<!--INICIO NAVEGADOR-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="font-family: Roboto-Bold;" id="mainNav">
+  <div class="container-fluid"> <!--style="background-color: red;"-->
+          
+      <a href="index.html" class="col-md-4 px-5">
+          <img src="img/logotipo_peluchin_pequeño.jpg" alt="">
+      </a>
+      <!--<a class="navbar-brand" href="#page-top">Albergue Peluchin</a>-->
+
+      <button class="navbar-toggler" style="border: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="bi bi-three-dots"></span></button>
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav col-md-8 my-lg-3">
+                  <li class="nav-item"><a style="color: #e6cc68;" class="nav-link p-2" href="index.html">Inicio</a></li>
+
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="nosotros.html#historia_organizacion">Historia y Organización</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#nuestros_aliados">Nuestros Aliados</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#quieres_ayudarnos">¿Quieres ayudarnos?</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#capacitacion">Capacitación</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="nuestro_trabajo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nuestro Trabajo</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html">Nuestro Trabajo</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#adopciones">Adopciones</a></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#maltrato_animal">Maltrato Animal</a></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#efermos_abandonados">Enfermos y Abandonados</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item"><a class="nav-link p-2" href="noticias.html">Noticias</a></li>
+
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="mas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="mas.html">Más</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="mas.html#donaciones">Donaciones</a></li>
+                        <li><a class="dropdown-item" href="mas.html#contactos">Contactos</a></li>
+                    </ul>
+                  </li>
+              
+              </ul>
+          
+                <div class="col-md-4 col-lg-4">
+                  <button type="button" class="btn btn-outline-warning me-2"><a href="mas.html#contactos" style="text-decoration: none; color:rgb(255, 208, 0)">Contactanos</a> </button>
+                  <button type="button" class="btn btn-warning"><a href="administrador/login.php" style="text-decoration: none; color:black">Iniciar Sesion</a></button>
+                </div>
+          </div>
+  </div>
+  </div>
+</nav>
+<!--FIN NAVEGADOR-->
+<!--INICIO REDES SOCIALES FLOTANTES-->  
+  <div class="social-bar">
+    <a href="https://www.facebook.com/albergueparamascotas" target="_blank" class="icon bi-facebook"></a>
+    <a href="https://wa.me/59179171062?text=Hola%20Albergue%20%22Peluchin%22,%20" class="icon bi-whatsapp" target="_blank"></a>
+    <a href="https://www.instagram.com/albergue_peluchin/?fbclid=IwAR1YLjL50DOyPYFY-9IM7298-Ir-n-YXoZpAe5KfyEICdWzrpzZzZFiOgng" target="_blank" class="icon bi-instagram"></a>
+    <a href="https://www.tiktok.com/@albergue_peluchin?is_from_webapp=1&sender_device=pc" target="_blank" class="icon bi-tiktok"></a>
+    <a href="#" target="_blank" class="icon bi-youtube"></a>
+  </div>
+<!--FIN REDES SOCIALES FLOTANTES-->
+ 
+  <section class="banner bg-danger">
+    <div class="banner-content">
+      <div class="inicio">
+        <h1 style="font-family: Roboto-Black;">ALBERGUE DE MASCOTAS <br><small  style="font-family: Roboto-Bold; color: #e6cc68;">"PELUCHIN"</small></h1>
+        <h3 style="font-family: Roboto-Light;">"Nuestro corazón esta lleno de huella"</h3>
+        <a href="noticias.html">Ver articulos</a>
+      </div>
+    </div>
+  </section>
+  
+<!--INICIO BIENVENIDOS-->
+<main style="background-image: url(img/fondo.png);">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7">
+        <h2 class="featurette-heading fw-normal lh-1 text-center" style="font-family: Roboto-Black; color: #3b372e">¡BIENVENIDOS! <br> <small style="font-family: Roboto-Bold;"><span class="text-muted">¿Qué es albergue de Mascotas "Peluchin"?</span></small></h2>
+        <p class="texto-justificado lead col-12">Somos un  albergue sin fines de lucro que se dedica día a día a : rescatar, rehabilitar y dar en adopción de manera responsable a perros y gatos en situación de abandono. " En equipo cambiemos su mundo ".
+        </p>
+      </div>
+      <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 p-5">
+        <div style="width: 100%;">
+          <img class="img-bienvenido" src="img/logotipo.jpg" alt="" width="100%">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</main>
+  
+<!--FIN BIENVENIDOS-->
+<!--INICIO MISION VISION VALORES-->
+<div class="puntos">
+  <div class="row position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-sm-12 col-md-12 p-lg-5 mx-auto my-5" style=" width: 100%; height: 100%;">
+      <h1 class="display-4 fw-normal" style="font-family: Roboto-Bold; color: #3b372e">¿Qué Proveemos?</h1>
+      <p class="lead fw-normal text-left">El bienestar, el derecho a que los animales tengan una vida digna, sin ninguna restricción para ellos.
+        <br>
+        La protección de los mismos como parte de la biodiversidad del planeta y el respeto para ellos.
+        <br>
+        El cumplimiento de las disposiciones legales que amparan a los animales.</p>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <iframe src="https://drive.google.com/file/d/1_AZP6D_RZPALfOkacetdL8YhywfPUZzi/preview" width="100%" height="300" allow="autoplay"></iframe>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <iframe src="https://drive.google.com/file/d/1_VPKaMJqzG_crvfFTDKc0mFgS4FCq0_D/preview" width="100%" height="300" allow="autoplay"></iframe>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+ 
+  <div class="row flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="mision col-sm-12 col-md-4 col-lg-4 col-xl-4 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden text-white">
+      <div class="my-3 py-3">
+        <h2 class="display-5" style="font-family: Roboto-Bold;">Misión</h2>
+        <p class="lead">Mejorar el mundo de las mascotas, y acabar con la crueldad y el abandono de ellos, cambiar la actitud de las personas y entiendan que las mascotas son y serán siempre nuestros amigos mas fieles.
+        </p>
+      </div>
+      <!--<div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>-->
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 bg-light pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5" style="font-family: Roboto-Bold;">Visión</h2>
+        <p class="lead">En un futuro el Albegue pueda ampliarse en diferentes aspectos, teniendo más ayuda y mucha más cantidad voluntarios, llegando a hacer felices a nuestros amigos de cuatro patas.
+        </p>
+      </div>
+      <!--<div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>-->
+    </div>
+    <div class="valores col-sm-12 col-md-4 col-lg-4 col-xl-4 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden text-white">
+      <div class="my-3 py-3">
+        <h2 class="display-8" style="font-family: Roboto-Bold;">Nuestros Valores</h2>
+        <p class="lead">Tolerancia cero hacia el maltrato animal en nuestra sociedad, con ellos hacer frente a los problemas que ponen en riesgos a nuestras mascotas.
+          <ul class="text-left" style="text-align: left !important;">
+            <li>Ser su voz en la sociedad</li>  
+            <li>Alto nivel de ética y integridad</li>
+            <li>Estándares elevados en la gestión de refugio y cuidado de las mascotitas</li>
+          </ul>
+        </p>
+      </div>
+      <!--<div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>-->
+    </div>
+  </div>
+</div>
+<!--FIN MISION VALORES--> 
+<section class="final-inicio" style="background-image: url(img/Prueba12.jpg);">
+  <div class="container">
+     <div class="row">
+         <div class="final-inicio-text">
+              <h1 style="font-family: Roboto-Bold;">¿Como ayudamos a las mascotas?</h1>
+              <p style="font-family: Roboto-Light;" class="animate-text">
+                 <span>Cuidandolas y queriendolas</span>
+                 <span>Recogiendolas y amandolas</span>
+                 <span>Dandoles de comer</span>
+                 <span>Haciendolas feliz</span>
+                 <span>Dandoles amor y cariño</span>
+              </p>
+         </div>
+     </div>
+  </div>
+</section>
+ 
+<!--INICIO FOOTER--> 
+<div class="b-example-divider"></div>
+ 
+<div class="footer bg-black" id="contactos" style="background-image: url(img/fondo5.jpg);">
+  <div class="row">
+    <footer class="footer text-center">
+      <div class="row m-3">
+        <div class="col-md-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30599.941605274613!2d-68.12072283964234!3d-16.526466147455412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9e60dac45aa6851!2sAlbergue%20de%20Mascotas%20%22Peluch%C3%ADn%22!5e0!3m2!1ses!2sbo!4v1665429882664!5m2!1ses!2sbo" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-sm-6 col-md-4 text-center p-4 ">
+            <h5 style="color: #fff;"> Emergencias | Maltrato Animal | Adopciones</h5>
+            <hr class="divider">
+            <h5 class="" style="color: #fff; text-decoration: none;" href="peluchinpatitasdeamoralbergue@gmail.com">Correo: peluchinpatitasdeamoralbergue@gmail.com</h5>
+            <hr class="divider">
+            <h5 style="color: #fff;">Teléfonos: <a href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22," style="text-decoration: none; color: #fff;" target="_blank">79171062</a>  - <a href="https://api.whatsapp.com/send?phone=61162965&text=Hola%20Albergue%20%22Peluchin%22,%20" style="text-decoration: none; color: #fff;" target="_blank">61162965</a> - <a href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22," style="text-decoration: none; color: #fff;" target="_blank">78974022</a></h5>
+           
+        </div>
+        <div class="col-md-4 text-center pt-5 p-5">
+          <h5 style="color: #fff;">Dirección</h5>
+          <h5 style="color: #fff;">C. 12 los Nogales #488, La Paz </h5>
+        </div>
+      </div>
+      <div class="container px-4 px-lg-5">
+          <ul class="list-inline mb-2 pt-1">
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/albergueparamascotas" target="_blank"><i class="icon bi-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="https://wa.me/59179171062?text=Hola%20Albergue%20%22Peluchin%22,%20" target="_blank"><i class="icon bi-whatsapp"></i></a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white" href="https://www.tiktok.com/@albergue_peluchin?is_from_webapp=1&sender_device=pc" target="_blank"><i class="icon bi-tiktok"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="https://www.instagram.com/albergue_peluchin/?fbclid=IwAR1YLjL50DOyPYFY-9IM7298-Ir-n-YXoZpAe5KfyEICdWzrpzZzZFiOgng" target="_blank"><i class="icon bi-instagram"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white" href="#!" target="_blank"><i class="icon bi-youtube"></i></a>
+            </li>
+          </ul>
+          <p class="small mt-3 mb-4" style="color: #fff;">Derechos Reservados &copy;, Albergue para mascotas "Peluchin", © 2022</p>
+      </div>
+  </div>
+</div>
+<!--FIN FOOTER-->
+ 
+<!--INICIO JAVASCRIPT-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+<script>
+  window.addEventListener('DOMContentLoaded', event => {
+  
+  // Navbar
+  var navbarShrink = function () {
+      const navbarCollapsible = document.body.querySelector('#mainNav');
+      if (!navbarCollapsible) {
+          return;
+      }
+      if (window.scrollY === 0) {
+          navbarCollapsible.classList.remove('navbar-shrink')
+      } else {
+          navbarCollapsible.classList.add('navbar-shrink')
+      }
+  
+  };
+  
+  // Shrink the navbar 
+  navbarShrink();
+  
+  // Shrink the navbar when page is scrolled
+  document.addEventListener('scroll', navbarShrink);
+  
+  // Activate Bootstrap scrollspy on the main nav element
+  const mainNav = document.body.querySelector('#mainNav');
+  if (mainNav) {
+      new bootstrap.ScrollSpy(document.body, {
+          target: '#mainNav',
+          offset: 74,
+      });
+  };
+  
+  // Collapse responsive navbar when toggler is visible
+  const navbarToggler = document.body.querySelector('.navbar-toggler');
+  const responsiveNavItems = [].slice.call(
+      document.querySelectorAll('#navbarResponsive .nav-link')
+  );
+  responsiveNavItems.map(function (responsiveNavItem) {
+      responsiveNavItem.addEventListener('click', () => {
+          if (window.getComputedStyle(navbarToggler).display !== 'none') {
+              navbarToggler.click();
+          }
+      });
+  });
+  
+  // Activate SimpleLightbox plugin for portfolio items
+  new SimpleLightbox({
+      elements: '#portfolio a.portfolio-box'
+  });
+  
+  });
+    </script>
+
+<script>
+  const txts=document.querySelector(".animate-text").children,
+        txtsLen=txts.length;
+    let index=0;
+   const textInTimer=3000,
+         textOutTimer=2800;
+
+  function animateText() {
+     for(let i=0; i<txtsLen; i++){
+       txts[i].classList.remove("text-in","text-out");  
+     }
+     txts[index].classList.add("text-in");
+
+     setTimeout(function(){
+         txts[index].classList.add("text-out");              
+     },textOutTimer)
+
+     setTimeout(function(){
+
+       if(index == txtsLen-1){
+           index=0;
+         }
+        else{
+            index++;
+          }
+         animateText();
+     },textInTimer); 
+  }
+  
+  window.onload=animateText;
+
+</script>
+
+<!--FIN JAVASCRIPT-->
+</div>
+</body>
+</html>
+ 
+
+

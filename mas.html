@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peluchin-Más</title>
+  <link rel="icon" type="image/x-icon" href="img/logotipo_peluchin_pequeño.jpg"/>
+  <!--ESTILOS CSS-->
+  <link rel="stylesheet" href="css/estilos.css">
+  <!--ESTILOS FONT-->
+  <link rel="stylesheet" href="css/font.css">
+  <!--ESTILOS CSS-->
+  <link rel="stylesheet" href="js/javascript.jss">
+  <!--BOOTSTRAP 5.0.0-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+  <!--ICONOS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Simple line icons-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <!--Jquery CDN-->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <!--Icono Precarga-->
+  <script>
+    $(window).on("load", function(){
+        $(".contenidos").css("opacity", 1) 
+        $("#precarga").css("display", "none");
+    });
+  </script>
+</head>
+<body>
+    <div id="precarga">
+        <img src="img/precarga.gif" alt="" width="200" height="200">
+    </div>
+<div class="contenidos">
+<!--INICIO NAVEGADOR-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="font-family: Roboto-Bold;" id="mainNav">
+  <div class="container-fluid"> <!--style="background-color: red;"-->
+          
+      <a href="index.html" class="col-md-4 px-5">
+          <img src="img/logotipo_peluchin_pequeño.jpg" alt="">
+      </a>
+      <!--<a class="navbar-brand" href="#page-top">Albergue Peluchin</a>-->
+
+      <button class="navbar-toggler" style="border: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="bi bi-three-dots"></span></button>
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav col-md-8 my-lg-3">
+                  <li class="nav-item"><a class="nav-link p-2" href="index.html">Inicio</a></li>
+
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="nosotros.html#historia_organizacion">Historia y Organización</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#nuestros_aliados">Nuestros Aliados</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#quieres_ayudarnos">¿Quieres ayudarnos?</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#capacitacion">Capacitación</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="nuestro_trabajo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nuestro Trabajo</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html">Nuestro Trabajo</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#adopciones">Adopciones</a></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#maltrato_animal">Maltrato Animal</a></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#efermos_abandonados">Enfermos y Abandonados</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item"><a class="nav-link p-2" href="noticias.html">Noticias</a></li>
+
+                  <li class="nav-item dropdown"><a style="color: #e6cc68;" class="nav-link dropdown-toggle p-2" href="mas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="mas.html">Más</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="mas.html#donaciones">Donaciones</a></li>
+                        <li><a class="dropdown-item" href="mas.html#contactos">Contactos</a></li>
+                    </ul>
+                  </li>
+              
+              </ul>
+          
+                <div class="col-md-4 col-lg-4">
+                  <button type="button" class="btn btn-outline-warning me-2"><a href="mas.html#contactos" style="text-decoration: none; color:rgb(255, 208, 0)">Contactanos</a> </button>
+                  <button type="button" class="btn btn-warning"><a href="administrador/login.php" style="text-decoration: none; color:black">Iniciar Sesion</a></button>
+                </div>
+          </div>
+  </div>
+  </div>
+</nav>
+<!--FIN NAVEGADOR-->
+<!--INICIO REDES SOCIALES FLOTANTES-->  
+<div class="social-bar">
+  <a href="https://www.facebook.com/albergueparamascotas" target="_blank" class="icon bi-facebook"></a>
+  <a href="https://wa.me/59179171062?text=Hola%20Albergue%20%22Peluchin%22,%20" class="icon bi-whatsapp" target="_blank"></a>
+  <a href="https://www.instagram.com/albergue_peluchin/?fbclid=IwAR1YLjL50DOyPYFY-9IM7298-Ir-n-YXoZpAe5KfyEICdWzrpzZzZFiOgng" target="_blank" class="icon bi-instagram"></a>
+  <a href="https://www.tiktok.com/@albergue_peluchin?is_from_webapp=1&sender_device=pc" target="_blank" class="icon bi-tiktok"></a>
+  <a href="#" target="_blank" class="icon bi-youtube"></a>
+</div>
+<!--FIN REDES SOCIALES FLOTANTES-->
+<!--INICIO CARATULA MASO-->
+<section class="masthead" style="background-image: url('img/portada_mas.jpg')">
+  <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+              <div class="site-heading">
+                  <h1 style="font-family: Roboto-Bold;">MÁS</h1>
+                  <span class="subheading" style="font-family: Roboto-Light;">"Plus"</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--FIN CARATULA NMAS-->
+<!--INICIO FRASE-->
+<section class="frase cta bg-warning">
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-9 mx-auto">
+              <div class="cta-inner bg-faded text-center rounded">
+                  <h2 class="section-heading mb-4">
+                      <span class="section-heading-upper">Recuerda:</span>
+                      <span class="section-heading-lower">"No vamos a cambiar el mundo ayudando a los animales , pero al menos cambiaremos su mundo habrá cambiado"
+                      </span>
+                  </h2>
+                  <!--<p class="mb-0">"No vamos a cambiar el mundo ayudando a los animales , pero al menos cambiaremos su mundo habrá cambiado"</p>-->
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--FIN FRASE-->
+<!--INICIO DONACIONES-->
+<div class="titulo mt-5" id="donaciones">
+  <span>DONACIONES</span>
+  <h2>Donaciones</h2>
+</div>
+
+<section class="frase">
+  <div class="container">
+      <div class="product-item">
+          <div class="product-item-title d-flex">
+              <div class="bg-faded p-5 d-flex ms-auto rounded">
+                  <h2 class="section-heading mb-0">
+                      <span class="section-heading-upper">Puedes hacer mucho</span>
+                      <span class="section-heading-lower">Ayudanos</span>
+                  </h2>
+              </div>
+          </div>
+          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/hola2.png" alt="..." />
+          <div class="product-item-description d-flex me-auto">
+              <div class="bg-faded p-5 rounded"><span class="mb-0">Contamos con mas de 140 animalitos albergados, por lo que no contamos siempre con lo necesario como ser: croquetas, camitas, ropitas, material de limpieza como ser Valdés, esponjas, trapos, guantes, entre otras cosas.
+              <br>
+              Nuestro albergue queda en C. 12 los Nogales #488, La Paz o también contáctenos en los siguientes teléfonos:  </span>
+              <button type="button" class="btn btn-light">79171062</button>
+              
+          </div>
+      </div>
+  </div>
+</section>
+
+<!--FIN DONACIONES-->
+<!--INICIO DONACION-->
+<div class="container bg-light">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7">
+      <h2 class="featurette-heading fw-normal lh-1 text-center">¡Haz tu donación! <br> <span class="text-muted">Puedes ayudar donando
+      </span></h2>
+      <p class="lead col-12">Tenemos cuentas bancarias que toda aportacion y donación va destinado a ayudar a nuestros animalitos del albergue</p>
+      <br>
+      <h5 class="px-5">Banco: <span class="text-muted"> BNB</span></h5>
+      <h5 class="px-5">Nombre: <span class="text-muted"> Laura Emilse Urzagasti Urzagasti</span></h5>
+      <h5 class="px-5">Tipo: <span class="text-muted"> Caja de ahorro</span></h5>
+      <h5 class="px-5">N° de cuenta: <span class="text-muted"> 1503159976</span></h5>
+      <h5 class="px-5">C.I.: <span class="text-muted"> 4883803 LP</span></h5>
+    </div>
+    <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 p-5">
+      <img class="img-qr" src="img/qra.jpeg" alt="">
+    </div>
+  </div>
+</div>
+<!--FIN DONACION-->
+<div class="row mt-5 mb-5">
+  <div class="col-sm-12 col-md-3 col-lg-3"><img class="img-fluid" src="img/hola10.png" alt=""></div>
+  <div class="col-sm-12 col-md-3 col-lg-3"><img class="img-fluid" src="img/hola11.png" alt=""></div>
+  <div class="col-sm-12 col-md-3 col-lg-3"><img class="img-fluid" src="img/hola7.png" alt=""></div>
+  <div class="col-sm-12 col-md-3 col-lg-3"><img class="img-fluid" src="img/hola9.png" alt=""></div>
+</div>
+<!--INICIO CONTACTOS-->
+<div class="titulo mt-5" id="contactos">
+  <span>CONTACTOS</span>
+  <h2>Contactos</h2>
+</div>
+<div class="container">
+  <div class="row text-center">
+    <div class="col-sm-12 col-md-4 p-5">
+      <h3 class="p-5">Dirección de nuestro Albergue</h3>
+      <p>C. 12 los Nogales #488, La Paz</p>
+      <button type="button" class="btn btn-info" style="width: 80%;"><a href="https://goo.gl/maps/L2BcCodTbGhQB3XZ9" target="_blank" style="text-decoration: none; color:#000">Visitar</a> </button>
+    </div>
+    <div class="col-sm-12 col-md-4 p-5">
+      <h3 class="p-5">Adopciones y Atención</h3>
+      <p>WhatsApp (+591) 79171062</p>
+      <button type="button" class="btn btn-success" style="width: 80%;"><a href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22..." target="_blank" style="text-decoration: none; color:#fff">Contactar</a></button>
+    </div>
+    <div class="col-sm-12 col-md-4 p-5">
+      <h3 class="p-5">Correo <br> Electronico</h3>
+      <p>peluchinpatitasdeamoralbergue@gmail.com</p>
+      <button type="button" class="btn btn-secondary" style="width: 80%;">Escribir</button>
+    </div>
+    <div class="col-12">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.0290669168876!2d-68.12825984954655!3d-16.524630145684547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f21f62cf95b27%3A0xc9e60dac45aa6851!2sAlbergue%20de%20Mascotas%20%22Peluch%C3%ADn%22!5e0!3m2!1ses!2sbo!4v1666629227555!5m2!1ses!2sbo" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
+<!--FIN CONTACTOS-->
+<!--INICIO FOOTER--> 
+<div class="b-example-divider"></div>
+ 
+<div class="footer bg-black" id="contactos" style="background-image: url(img/fondo5.jpg);">
+  <div class="row">
+    <footer class="footer text-center">
+      <div class="row m-3">
+        <div class="col-md-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30599.941605274613!2d-68.12072283964234!3d-16.526466147455412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9e60dac45aa6851!2sAlbergue%20de%20Mascotas%20%22Peluch%C3%ADn%22!5e0!3m2!1ses!2sbo!4v1665429882664!5m2!1ses!2sbo" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-sm-6 col-md-4 text-center p-4 ">
+            <h5 style="color: #fff;"> Emergencias | Maltrato Animal | Adopciones</h5>
+            <hr class="divider">
+            <h5 class="" style="color: #fff; text-decoration: none;" href="peluchinpatitasdeamoralbergue@gmail.com">Correo: peluchinpatitasdeamoralbergue@gmail.com</h5>
+            <hr class="divider">
+            <h5 style="color: #fff;">Teléfonos: <a href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22," style="text-decoration: none; color: #fff;" target="_blank">79171062</a>  - <a href="https://api.whatsapp.com/send?phone=61162965&text=Hola%20Albergue%20%22Peluchin%22,%20" style="text-decoration: none; color: #fff;" target="_blank">61162965</a> - <a href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22," style="text-decoration: none; color: #fff;" target="_blank">78974022</a></h5>
+           
+        </div>
+        <div class="col-md-4 text-center pt-5 p-5">
+          <h5 style="color: #fff;">Dirección</h5>
+          <h5 style="color: #fff;">C. 12 los Nogales #488, La Paz </h5>
+        </div>
+      </div>
+      <div class="container px-4 px-lg-5">
+          <ul class="list-inline mb-2 pt-1">
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/albergueparamascotas" target="_blank"><i class="icon bi-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="https://wa.me/59179171062?text=Hola%20Albergue%20%22Peluchin%22,%20" target="_blank"><i class="icon bi-whatsapp"></i></a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white" href="https://www.tiktok.com/@albergue_peluchin?is_from_webapp=1&sender_device=pc" target="_blank"><i class="icon bi-tiktok"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="https://www.instagram.com/albergue_peluchin/?fbclid=IwAR1YLjL50DOyPYFY-9IM7298-Ir-n-YXoZpAe5KfyEICdWzrpzZzZFiOgng" target="_blank"><i class="icon bi-instagram"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white" href="#!" target="_blank"><i class="icon bi-youtube"></i></a>
+            </li>
+          </ul>
+          <p class="small mt-3 mb-4" style="color: #fff;">Derechos Reservados &copy;, Albergue para mascotas "Peluchin", © 2022</p>
+      </div>
+  </div>
+</div>
+<!--FIN FOOTER-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+
+  <script>
+    window.addEventListener('DOMContentLoaded', event => {
+    
+    // Navbar
+    var navbarShrink = function () {
+        const navbarCollapsible = document.body.querySelector('#mainNav');
+        if (!navbarCollapsible) {
+            return;
+        }
+        if (window.scrollY === 0) {
+            navbarCollapsible.classList.remove('navbar-shrink')
+        } else {
+            navbarCollapsible.classList.add('navbar-shrink')
+        }
+    
+    };
+    
+    // Shrink the navbar 
+    navbarShrink();
+    
+    // Shrink the navbar when page is scrolled
+    document.addEventListener('scroll', navbarShrink);
+    
+    // Activate Bootstrap scrollspy on the main nav element
+    const mainNav = document.body.querySelector('#mainNav');
+    if (mainNav) {
+        new bootstrap.ScrollSpy(document.body, {
+            target: '#mainNav',
+            offset: 74,
+        });
+    };
+    
+    // Collapse responsive navbar when toggler is visible
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavItems = [].slice.call(
+        document.querySelectorAll('#navbarResponsive .nav-link')
+    );
+    responsiveNavItems.map(function (responsiveNavItem) {
+        responsiveNavItem.addEventListener('click', () => {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                navbarToggler.click();
+            }
+        });
+    });
+    
+    // Activate SimpleLightbox plugin for portfolio items
+    new SimpleLightbox({
+        elements: '#portfolio a.portfolio-box'
+    });
+    
+    });
+    
+      </script>
+</div>
+</body>
+</html>

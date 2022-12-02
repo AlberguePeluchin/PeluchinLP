@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peluchin-Nosotros</title>
+  <link rel="icon" type="image/x-icon" href="img/logotipo_peluchin_pequeño.jpg"/>
+  <!--ESTILOS CSS-->
+  <link rel="stylesheet" href="css/estilos.css">
+  <!--ESTILOS FONT-->
+  <link rel="stylesheet" href="css/font.css">
+  <!--ESTILOS CSS-->
+  <link rel="stylesheet" href="js/javascript.jss">
+  <!--BOOTSTRAP 5.0.0-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+  <!--ICONOS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Simple line icons-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <!--Jquery CDN-->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <!--Icono Precarga-->
+  <script>
+    $(window).on("load", function(){
+        $(".contenidos").css("opacity", 1) 
+        $("#precarga").css("display", "none");
+    });
+  </script>
+</head>
+<body>
+    <div id="precarga">
+        <img src="img/precarga.gif" alt="" width="200" height="200">
+    </div>
+<div class="contenidos">
+<!--INICIO NAVEGADOR-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="font-family: Roboto-Bold;" id="mainNav">
+  <div class="container-fluid"> <!--style="background-color: red;"-->
+          
+      <a href="index.html" class="col-md-4 px-5">
+          <img src="img/logotipo_peluchin_pequeño.jpg" alt="">
+      </a>
+      <!--<a class="navbar-brand" href="#page-top">Albergue Peluchin</a>-->
+
+      <button class="navbar-toggler" style="border: none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="bi bi-three-dots"></span></button>
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav col-md-8 my-lg-3">
+                  <li class="nav-item"><a class="nav-link p-2" href="index.html">Inicio</a></li>
+
+                  <li class="nav-item dropdown"><a style="color: #e6cc68;" class="nav-link dropdown-toggle p-2" href="nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nosotros</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="nosotros.html#historia_organizacion">Historia y Organización</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#nuestros_aliados">Nuestros Aliados</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#quieres_ayudarnos">¿Quieres ayudarnos?</a></li>
+                          <li><a class="dropdown-item" href="nosotros.html#capacitacion">Capacitación</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="nuestro_trabajo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nuestro Trabajo</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html">Nuestro Trabajo</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#adopciones">Adopciones</a></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#maltrato_animal">Maltrato Animal</a></li>
+                        <li><a class="dropdown-item" href="nuestro_trabajo.html#efermos_abandonados">Enfermos y Abandonados</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item"><a class="nav-link p-2" href="noticias.html">Noticias</a></li>
+
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="mas.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="mas.html">Más</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="mas.html#donaciones">Donaciones</a></li>
+                        <li><a class="dropdown-item" href="mas.html#contactos">Contactos</a></li>
+                    </ul>
+                  </li>
+              
+              </ul>
+          
+                <div class="col-md-4 col-lg-4">
+                  <button type="button" class="btn btn-outline-warning me-2"><a href="mas.html#contactos" style="text-decoration: none; color:rgb(255, 208, 0)">Contactanos</a> </button>
+                  <button type="button" class="btn btn-warning"><a href="administrador/login.php" style="text-decoration: none; color:black">Iniciar Sesion</a></button>
+                </div>
+          </div>
+  </div>
+  </div>
+</nav>
+<!--FIN NAVEGADOR-->
+<!--INICIO REDES SOCIALES FLOTANTES-->  
+  <div class="social-bar">
+    <a href="https://www.facebook.com/albergueparamascotas" target="_blank" class="icon bi-facebook"></a>
+    <a href="https://wa.me/59179171062?text=Hola%20Albergue%20%22Peluchin%22,%20" class="icon bi-whatsapp" target="_blank"></a>
+    <a href="https://www.instagram.com/albergue_peluchin/?fbclid=IwAR1YLjL50DOyPYFY-9IM7298-Ir-n-YXoZpAe5KfyEICdWzrpzZzZFiOgng" target="_blank" class="icon bi-instagram"></a>
+    <a href="https://www.tiktok.com/@albergue_peluchin?is_from_webapp=1&sender_device=pc" target="_blank" class="icon bi-tiktok"></a>
+    <a href="#" target="_blank" class="icon bi-youtube"></a>
+  </div>
+<!--FIN REDES SOCIALES FLOTANTES-->
+<!--INICIO CARATULA NOSOTROS-->
+<section class="masthead" style="background-image: url('img/portada_nosotros.jpg')">
+  <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+              <div class="site-heading">
+                  <h1 style="font-family: Roboto-Bold;">NOSOTROS</h1>
+                  <span style="font-family: Roboto-Light;" class="subheading">"Hagamos de sus vidas felices"</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--FIN CARATULA NOSOTROS-->
+<!--INICIO INFORMACION CARATULA NOSOTROS-->
+<section class="page-section bg-warning" id="about">
+  <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 text-center">
+              <h2 class="mt-0" style="font-family: Roboto-Bold;color: #3b372e">¿Qué promovemos?</h2>
+              <hr class="divider divider-light" />
+              <p class="text-white-75 mb-4">El bienestar, el derecho a que los animales tengan una vida digna, sin ninguna restricción para ellos.
+                La protección de los mismos como parte de la biodiversidad del planeta y el respeto para ellos.
+                El cumplimiento de las disposiciones legales que amparan a los animales.</p>
+              <!--<a class="btn btn-success" href="nuestro_trabajo.html">Conoce nuestro trabajo</a>-->
+          </div>
+
+
+          <div class="col-sm-12 col-md-6 text-center mt-4">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h5 style="font-family: Roboto-Bold;">¿Qué denunciamos?</h5>
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-colapsouno" aria-expanded="actives" aria-controls="panelsStayOpen-colapsouno">
+                          1. Crueldad contra mascotas
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-colapsouno" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body bg-warning">
+                          <strong class="text-justify">LEY Nº 700 LEY PARA LA DEFENSA DE LOS ANIMALES CONTRA ACTOS DE CRUELDAD Y MALTRATO</strong>
+                          <p class="texto-justificado"> La presente Ley tiene por objeto establecer el marco normativo para la defensa de los animales, contra actos de violencia, crueldad y maltrato, cometidos por personas naturales o jurídicas. Como también la finalidad prevenir y penalizar los actos de violencia, maltrato, crueldad y biocidio cometidos por personas contra animales domésticos,<code> en el marco del numeral 21 del Parágrafo I del Artículo 298</code> de la Constitución Política del Estado.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-colapsoDos" aria-expanded="false" aria-controls="panelsStayOpen-colapsoDos">
+                          2. Crueldad en el comercio de mascotas
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-colapsoDos" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body bg-warning">
+                          <strong>Hay aspectos legales e ilegales en el comercio de mascotas pertenecientes a la LEY Nº 700</strong>
+                          <p class="texto-justificado">Pero la legalidad no importa; ya sea criados en cautiverio o raptados: todo es cruel.
+                            Lamentablemente, este comercio está creciendo rápidamente y puede traer consecuencias
+                            desastrosas. <br>
+                            Gran parte del comercio de mascotas son las redes sociales que es el glamur de las personas que se dedican a este tipo de comercio.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-colapsoTres" aria-expanded="false" aria-controls="panelsStayOpen-colapsoTres">
+                          3. Abuso en animales de trabajo
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-colapsoTres" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body bg-warning">
+                          <strong>Los animales como sujetos de protección tienen los siguientes derechos Ley Nª700:</strong>
+                          <ul>
+                            <li class="texto-justificado">A ser reconocidos como seres vivos.</li>
+                            <li class="texto-justificado">A un ambiente saludable y protegido.</li>
+                            <li class="texto-justificado">A ser protegidos contra todo tipo de violencia, maltrato y crueldad.</li>
+                            <li class="texto-justificado">A ser auxiliados y atendidos.</li>
+                          </ul> 
+                          <p class="texto-justicado">Cualquiera que incumpla estos derechos, es necesario denunciar para evitar que el animalito sufra a largo plazo, evitar es preveer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-colapsoCuatro" aria-expanded="false" aria-controls="panelsStayOpen-colapsoCuatro">
+                          4. La violación de las leyes de los animalitos
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-colapsoCuatro" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body bg-warning">
+                          <strong>La Ley N ° 700, que, entre otras sanciones, prohibiciones y aspectos varios, plantea sentencias que van desde 1 hasta 10 años de privación de libertad a quienes incurran en maltrato animal.</strong><br> 
+                          <p class="texto-justificado">
+                            Las person@s que matare a un animal de manera intencional, tendrá una sanción de 4 a 10 años de cárcel. <br> Asimismo, se propone una condena de 3 a 8 años de reclusión en los siguientes casos: <br>
+                            Para el que provoque incendio poniendo en peligro los ecosistemas o la integridad de los animales; y por utilizar animales en prácticas sexuales, de pelea o tauromaquia; poseer animales o protegidos por Ley; adiestrar animales domésticos con fines recreativos o comerciales.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+
+
+
+          <div class="col-sm-12 col-md-6 text-center mt-4">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <h5 style="font-family: Roboto-Bold;">Nuestras metas</h5>
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-colapsoCinco" aria-expanded="false" aria-controls="panelsStayOpen-colapsoCinco">
+                          1. Adopción
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-colapsoCinco" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body bg-warning">
+                          <p class="texto-justificado">
+                            La adopción es una alternativa que a la hora de adquirir un animal de compañía beneficia a todos: a la familia, a las entidades de protección animal y, por supuesto, al propio perro o gato. <br>
+                            Mi meta en la vida es ser tan buena persona, como mi perro cree que soy”. “Adopta un perro, es la única forma de escoger un familiar y la mejor de conseguir un amigo fiel…”. “Un perro es compañía, dedicación completa y amor sin condiciones, justo lo que siempre hemos deseado de los demás y nunca hemos brindado.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-colapsoSeis" aria-expanded="false" aria-controls="panelsStayOpen-colapsoSeis">
+                          2. Auxilio a animales en condición critica
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-colapsoSeis" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body bg-warning">
+                          <p class="texto-justificado">
+                            Para nadie es secreto que el número de perros callejeros ha aumentado en los últimos años en La Paz, así como en otras ciudades capitales de Bolivia. Pese a las políticas públicas, que poco o nada han hecho para hacerle frente a este problema, la cifra sigue en ascenso. <br>
+                            "Si buscamos responsabilidades, es la población, pero si buscamos orden en este tema la llamada de atención es para el municipio que debería estar fortaleciendo las actividades para ya no tener perros con dueños en las calles, nosotros como albergue trabajos individualmente para rebajar los casos de animales que se encuentren en un estado que no tiene que ser propio de los animales, ayudando, salvando perros abandonados o moribundos.
+                          </div>
+                          </p>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-colapsoSiete" aria-expanded="false" aria-controls="panelsStayOpen-colapsoSiete">
+                          3. Esterilización
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-colapsoSiete" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body bg-warning">
+                          <p class="texto-justificado">
+                            La esterilización, para evitar camadas indeseadas; la identificación, que permite localizar al dueño del animal en caso de pérdidas; y la adopción, que le da una nueva oportunidad de vida a las mascotas abandonadas, son las iniciativas mejores valoradas nuestro albergue, para comenzar a paliar el mayor problema que sufren los perros y gatos de nuestro país: el abandono y las pérdidas.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-colapsoOcho" aria-expanded="false" aria-controls="panelsStayOpen-colapsoOcho">
+                         4. Educación
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-colapsoOcho" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body bg-warning">
+                          <p class="texto-justificado">
+                            Lograr el bienestar de las mascotitas en general, mediante la educación junto con el complimientos de las leyes, para promover una mejor comunidad evitando problemas de abandonos, maltratos y demás.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+      </div>
+  </div>
+</section>
+<!--FIN INFORMACION CARATULA NOSOTROS-->
+<!--INICIO HISTORIA Y ORGANIZACION-->
+<section id="historia_organizacion" class="services pt-0">
+  <div class="container" data-aos="fade-up">
+    <div class="titulo">
+      <span>HISTORIA Y ORGANIZACIÓN</span>
+      <h2>Historia y Organización</h2>
+    </div>
+    <div class="row justify-content-center align-items-center">
+      <div class="img-historia-organizaion col-sm-12 col-md-6 col-lg-6 align-items-center">
+        <img src="img/13.jpg" alt="" style="width: 400px; height: 400px;">
+      </div>
+      <div class="text-historia-organizaion col-sm-12 col-md-6 col-lg-6 justify-content-center align-items-center p-5">
+        <p class="texto-justificado">La idea del albergue comenzo con 4 personas, Laura Urzagasti, es la administradora que sigue con el sueño de un lugar donde las mascotitas puedan sentirse en casa sin temor a que los lastimen.
+        <br><br>
+        Albergue de Mascotas "Peluchin", desde un principio nuestra organización se dedicó a auxiliar animales que agonizaban en las calles, fuimos los primeros en tener un albergue de animales desamparados en la ciudad de la Paz, en el año 2016 alquilamos un terreno y se comenzó con la construcción del albergue con una inversión de 40000 Bs y diseñamos el primer albergue para animales abandonados en la Paz.</p>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 m-4">
+        <button class="btn btn-warning col-12" type="button"><a href="organizacion.html" style="text-decoration: none; color:black; font-size: 20px">Organización</a></button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--FIN HISTORIA Y ORGANIZACION-->
+<!--INICIO ALIADOS-->
+<section id="nuestros_aliados" class="ayudanos bg-white">
+  <div class="container" data-aos="fade-up">
+    <div class="titulo">
+      <span>NUESTROS ALIADOS</span>
+      <h2>Nuestros Aliados</h2>
+    </div>
+</section>
+<div class="container pb-5">
+  <div class="row">
+    <div class="col-sm-12 col-md-4">
+      <a href="" data-bs-toggle="modal" data-bs-target="#alianzafundacion"><img src="img/alianzafundacion.jpg" alt="" width="400" height="250"></a>
+      <!-- Modal -->
+      <div class="modal fade" id="alianzafundacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Aliado: FUNDACIÓN EDUCAR PARA LA VIDA</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              La Fundación Educar Para La Vida siendo uno de los mayores aliados del albergue, esta colaborando con la creación de su página web, visita de ayuda al Albergue, divulgación de contenido, entre otras actividades.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-outline-warning">Visitar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <a href="" data-bs-toggle="modal" data-bs-target="#alianzagobiernolapaz"><img src="img/AlianzaGobiernoLaPaz.jpg" alt="" width="400" height="250"></a>
+      <!-- Modal -->
+      <div class="modal fade" id="alianzagobiernolapaz" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Aliado: GOBIERNO AUTÓNOMO DE LA PAZ</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              El Gobierno Autónomo de La Paz donara 40 casitas para los animalitos del albergue, siendo de gran ayuda para nuestros amigos de cuatro patas.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-outline-warning">Visitar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <a href="" data-bs-toggle="modal" data-bs-target="#alianzagobiernoelalto"><img src="img/AlianzaGobiernoElAlto.jpg" alt="" width="400" height="250"></a>
+      <!-- Modal -->
+      <div class="modal fade" id="alianzagobiernoelalto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Aliado: GOBIERNO AUTÓNOMO DE EL ALTO</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              El Gobierno Autónomo de El Alto nos ayudara con los espacios en las campañas, en centros de la ciudad y con el recojo de basura, como poner contenedores y demás.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-outline-warning">Visitar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <a href="" data-bs-toggle="modal" data-bs-target="#alianzaunifranz"><img src="img/AlianzaUnifranz.jpg" alt="" width="400" height="250"></a>
+      <!-- Modal -->
+      <div class="modal fade" id="alianzaunifranz" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Aliado: UNIFRANZ</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              La Universidad Privada Franz Tamayo
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-outline-warning">Visitar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <a href="" data-bs-toggle="modal" data-bs-target="#alianzaconsejal"><img src="img/AlianzaConsejoMunicipal.jpg" alt="" width="400" height="250"></a>
+      <!-- Modal -->
+      <div class="modal fade" id="alianzaconsejal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Aliado: Conejal Municipal de El Alto WILMA ALANOCA</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              La Consejal Municipal de El Alto nos donara casitas para los perros y los diferentes animales con los que cuenta el albergue, en promoción para para postular a la alcaldía de el Alto en campañas y demás actos.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-outline-warning">Visitar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <a href="" data-bs-toggle="modal" data-bs-target="#alianzatributarismo"><img src="img/AlianzaTributarismoCuantico.jpg" alt="" width="400" height="250"></a>
+      <!-- Modal -->
+      <div class="modal fade" id="alianzatributarismo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Aliado: TRIBUTARISMO CUANTICO S.R.L.</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              La empresa de Tribtarismo Cuantico S.R.L. nos donara bolsas de croqueta cada cierto tiempo en convenio con el albergue, para que nuestros animalitos puedan sobrevivir.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-outline-warning">Visitar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+
+<!--FIN ALIADOS-->
+<!--INICIO ¿QUIERES AYUDARNOS?-->
+<section id="quieres_ayudarnos" class="ayudanos">
+  <div class="container" data-aos="fade-up">
+    <div class="titulo">
+      <span>¿QUIERES AYUDARNOS?</span>
+      <h2>¿Quieres ayudarnos?</h2>
+    </div>
+    <div class="m-3">
+      <h4>Puedes ayudar de las siguientes maneras...</h4>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+          <!-- Blog post-->
+          <div class="card mb-4">
+              <a href="#!"><img class="card-img-top" src="img/voluntario.jpg" alt="..." /></a>
+              <div class="card-body">
+                  <div class="small text-muted">¿Comó puedes ayudarnos?</div>
+                  <h2 class="card-title h4 pt-3 pb-3" style="font-family: Roboto-Bold;">Voluntariado</h2>
+                  <p class="texto-justificado card-text">"Nunca subestimes tu habilidad para mejorar la vida de nuestras mascotas. Una persona sólo tiene derecho a mirar a un animal con pena, cuando ha de ayudarle a levantarse."
+                  <br>
+                  <h6 class="texto-justificado">Con tu voluntariado nos ayudaras a transportar animalitos hacia el albergue, limpieza, verificar casos de maltrato, abandono, claro si eres menor de 18 años tienes que contar con el permiso de tus padres.</h6></p>
+                  <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20ser%20voluntario%20%C2%BFcomo%20podr%C3%ADa%20ayudar?%20%C2%BFque%20requisitos?" target="_blank">Quiero ser voluntario</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-6">
+        <!-- Blog post-->
+        <div class="card mb-4">
+            <a href="#!"><img class="card-img-top" src="img/padrino.jpg" alt="..." /></a>
+            <div class="card-body">
+                <div class="small text-muted">¿Comó puedes ayudarnos?</div>
+                <h2 class="card-title h4 pt-3 pb-3" style="font-family: Roboto-Bold;">Padrino de Esterilización</h2>
+                <p class="texto-justificado card-text">No cuentas con el tiempo de ayudar, pero deseas que ya no crezcan los casos de mascotas abandonadas, maltratadas.
+                <br><br>
+                <h6 class="texto-justificado">Puedes ser parte de nuestro Programa de esterilización dirigido a dueños responsables, los padrinos dan cierto dinero para que no vengan mascotitas que sufrirán al mundo.</h6></p>
+                <a class="btn btn-success" href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22,%20quisiera%20ser%20padrino%20de%20esterilizaci%C3%B3n%20%C2%BFcomo%20podr%C3%ADa%20ayudar?%20%C2%BFque%20requisitos%20necesito?" target="_blank">Quiero ser padrino</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+<!--FIN ¿QUIERES AYUDARNOS?-->
+<!--INICIO CAPACITACIONES-->
+<div class="container" id="capacitacion">
+  <div class="titulo">
+    <span>CAPACITACIONES</span>
+    <h2>Capacitaciones</h2>
+  </div>
+  <div class="container px-4 px-lg-5 my-5">
+    <div class="row gx-4 gx-lg-5 align-items-center">
+        <video class="col-md-6" src="videos/Razones para tener un gato.mp4" width="100%" height="300" controls></video>
+        <div class="col-md-6">
+            <h1 class="display-5 fw-bolder" style="font-family: Roboto-Light;"><small style="font-family: Roboto-Bold; color: #e6cc68;">Razones</small>  para tener un gato</h1>
+            <!--<p class="lead">Este mes del amor amor y la amistad ,estaremos vendiendo cupcakes para tu amigo Perruno y gatuno
+              A solo 25bs. Las cajas que tiene 2 cupcakes de chocolate o vainilla para ti y 2 cupcakes con ingredientes especiales para ellos..</p>-->
+        </div>
+    </div>
+    <div class="row gx-4 gx-lg-5 align-items-center">
+      <video class="col-md-6" src="videos/Albergue de Mascotas Peluchin.mp4" width="100%" height="300" controls></video>
+      <div class="col-md-6">
+          <h1 class="display-5 fw-bolder" style="font-family: Roboto-Light;">Un <small style="font-family: Roboto-Bold; color: #e6cc68;">pequeño mensaje</small>  del Albergue "Huellitas"</h1>
+          <!--<p class="lead">Este mes del amor amor y la amistad ,estaremos vendiendo cupcakes para tu amigo Perruno y gatuno
+            A solo 25bs. Las cajas que tiene 2 cupcakes de chocolate o vainilla para ti y 2 cupcakes con ingredientes especiales para ellos..</p>-->
+      </div>
+  </div>
+  <div class="row gx-4 gx-lg-5 align-items-center">
+    <video class="col-md-6" src="videos/Albergue de mascotas peluchin (1).mp4" width="100%" height="300" controls></video>
+    <div class="col-md-6">
+        <h1 class="display-5 fw-bolder" style="font-family: Roboto-Light;">Tu tambien <small style="font-family: Roboto-Bold; color: #e6cc68;">puedes ayudar</small></h1>
+        <!--<p class="lead">Este mes del amor amor y la amistad ,estaremos vendiendo cupcakes para tu amigo Perruno y gatuno
+          A solo 25bs. Las cajas que tiene 2 cupcakes de chocolate o vainilla para ti y 2 cupcakes con ingredientes especiales para ellos..</p>-->
+    </div>
+</div>
+  </div>
+</div>
+<!--FIN CAPACITACIONES-->
+
+
+<!--INICIO FOOTER--> 
+<div class="b-example-divider"></div>
+ 
+<div class="footer bg-black" id="contactos" style="background-image: url(img/fondo5.jpg);">
+  <div class="row">
+    <footer class="footer text-center">
+      <div class="row m-3">
+        <div class="col-md-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30599.941605274613!2d-68.12072283964234!3d-16.526466147455412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9e60dac45aa6851!2sAlbergue%20de%20Mascotas%20%22Peluch%C3%ADn%22!5e0!3m2!1ses!2sbo!4v1665429882664!5m2!1ses!2sbo" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-sm-6 col-md-4 text-center p-4 ">
+            <h5 style="color: #fff;"> Emergencias | Maltrato Animal | Adopciones</h5>
+            <hr class="divider">
+            <h5 class="" style="color: #fff; text-decoration: none;" href="peluchinpatitasdeamoralbergue@gmail.com">Correo: peluchinpatitasdeamoralbergue@gmail.com</h5>
+            <hr class="divider">
+            <h5 style="color: #fff;">Teléfonos: <a href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22," style="text-decoration: none; color: #fff;" target="_blank">79171062</a>  - <a href="https://api.whatsapp.com/send?phone=61162965&text=Hola%20Albergue%20%22Peluchin%22,%20" style="text-decoration: none; color: #fff;" target="_blank">61162965</a> - <a href="https://api.whatsapp.com/send?phone=79171062&text=Hola%20Albergue%20%22Peluchin%22," style="text-decoration: none; color: #fff;" target="_blank">78974022</a></h5>
+           
+        </div>
+        <div class="col-md-4 text-center pt-5 p-5">
+          <h5 style="color: #fff;">Dirección</h5>
+          <h5 style="color: #fff;">C. 12 los Nogales #488, La Paz </h5>
+        </div>
+      </div>
+      <div class="container px-4 px-lg-5">
+          <ul class="list-inline mb-2 pt-1">
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/albergueparamascotas" target="_blank"><i class="icon bi-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="https://wa.me/59179171062?text=Hola%20Albergue%20%22Peluchin%22,%20" target="_blank"><i class="icon bi-whatsapp"></i></a>
+              </li>
+              <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white" href="https://www.tiktok.com/@albergue_peluchin?is_from_webapp=1&sender_device=pc" target="_blank"><i class="icon bi-tiktok"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="https://www.instagram.com/albergue_peluchin/?fbclid=IwAR1YLjL50DOyPYFY-9IM7298-Ir-n-YXoZpAe5KfyEICdWzrpzZzZFiOgng" target="_blank"><i class="icon bi-instagram"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white" href="#!" target="_blank"><i class="icon bi-youtube"></i></a>
+            </li>
+          </ul>
+          <p class="small mt-3 mb-4" style="color: #fff;">Derechos Reservados &copy;, Albergue para mascotas "Peluchin", © 2022</p>
+      </div>
+  </div>
+</div>
+<!--FIN FOOTER-->
+
+
+<!--SCRIPTS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+<script>
+  window.addEventListener('DOMContentLoaded', event => {
+  
+  // Navbar
+  var navbarShrink = function () {
+      const navbarCollapsible = document.body.querySelector('#mainNav');
+      if (!navbarCollapsible) {
+          return;
+      }
+      if (window.scrollY === 0) {
+          navbarCollapsible.classList.remove('navbar-shrink')
+      } else {
+          navbarCollapsible.classList.add('navbar-shrink')
+      }
+  
+  };
+  
+  // Shrink the navbar 
+  navbarShrink();
+  
+  // Shrink the navbar when page is scrolled
+  document.addEventListener('scroll', navbarShrink);
+  
+  // Activate Bootstrap scrollspy on the main nav element
+  const mainNav = document.body.querySelector('#mainNav');
+  if (mainNav) {
+      new bootstrap.ScrollSpy(document.body, {
+          target: '#mainNav',
+          offset: 74,
+      });
+  };
+  
+  // Collapse responsive navbar when toggler is visible
+  const navbarToggler = document.body.querySelector('.navbar-toggler');
+  const responsiveNavItems = [].slice.call(
+      document.querySelectorAll('#navbarResponsive .nav-link')
+  );
+  responsiveNavItems.map(function (responsiveNavItem) {
+      responsiveNavItem.addEventListener('click', () => {
+          if (window.getComputedStyle(navbarToggler).display !== 'none') {
+              navbarToggler.click();
+          }
+      });
+  });
+  
+  // Activate SimpleLightbox plugin for portfolio items
+  new SimpleLightbox({
+      elements: '#portfolio a.portfolio-box'
+  });
+  
+  });
+  
+    </script>
+<script>
+  const txts = document.querySelector(".texto-voluntario-animado").children;
+        txtsLen = txts.length;
+  let   index = 0;
+  const textInTimer = 4000;
+        textOutTimer = 3800;
+
+  function animateText()
+  {
+    for(let i=0; i<txtsLen; i++)
+    {
+      txts[i].classList.remove("text-in","text-out");
+    }
+    txts[index].classList.add("text-in");
+
+    setTimeout(function()
+    {
+      txts[index].classList.add("text-out");
+    },textOutTimer)
+
+    if(index == txtsLen-1)
+    {
+      index = 0;
+    }
+    else
+    {
+      index++;
+    }
+
+    setTimeout(animateText, 4000);
+  }
+
+  window.onload = animateText;
+</script>
+
+
+</div>
+</body>
+</html>
